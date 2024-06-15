@@ -1296,7 +1296,7 @@ img {
 
 @media (max-width: 768px) {
     .pdf-container {
-        height: 400px;
+        height: 800px;
     }
 
     .pdf-container iframe {
@@ -1306,6 +1306,6 @@ img {
 
 @media (max-width: 480px) {
     .pdf-container {
-        height: 300px;
+        height: 600px;
     }
 }
