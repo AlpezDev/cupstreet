@@ -1361,3 +1361,63 @@ img {
         height: 300px;
     }
 }
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+}
+
+.category-grid a {
+    display: block;
+    width: 100%;
+    height: 120px; /* Set a fixed height for the images */
+    text-align: center;
+}
+
+.category-grid img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(6, 1fr); /* Maintain 6 columns grid for better control */
+    }
+
+    .one-columns {
+        grid-column: span 6; /* Each of these will span 6 columns, forming 1 columns per row */
+    }
+    
+    .two-columns {
+        grid-column: span 3; /* Each of these will span 3 columns, forming 2 columns per row */
+    }
+    
+    .three-columns {
+        grid-column: span 2; /* Each of these will span 2 columns, forming 3 columns per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: repeat(6, 1fr); /* Maintain 6 columns grid for better control */
+    }
+    
+    .one-columns {
+        grid-column: span 6; /* Each of these will span 6 columns, forming 1 columns per row */
+    }
+    
+    .two-columns {
+        grid-column: span 3; /* Each of these will span 3 columns, forming 2 columns per row */
+    }
+    
+    .three-columns {
+        grid-column: span 2; /* Each of these will span 2 columns, forming 3 columns per row */
+    }
+}
